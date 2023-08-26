@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles-3-1.css">
+  <title>OUR VIDEOS</title>
+</head>
+<body>
+  <header>
+    <h1>A Short Messages From Us</h1>
+    <p style="
+      font-size: 20px;
+      "><a href="/main-page.html">Home</a></p>
+  </header>
+  <main>
+    <section class="content-section">
+      <h2>Ammama</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/ammama.mp4" frameborder="0" allowfullscreen muted></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Babai, Pinni and Rambi</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/sangi-pinni-1.mp4" frameborder="0" allowfullscreen muted></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Suchi</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/sangi-pinni-2.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Sarma Babai</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/Radhika-pinni-1.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Pinni, Suru and Eeshu</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/Radhika-pinni-2.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Babji Tata</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/Radhika-pinni-3.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Add more content sections here -->
+  <footer>
+    <p>&copy; 2023 KOTAS. All rights reserved.</p>
+  </footer>
+  <script>
+    // Pause videos after they are loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('iframe');
+      videos.forEach(video => {
+        video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      });
+    });
+  </script>
+</body>
+</html>

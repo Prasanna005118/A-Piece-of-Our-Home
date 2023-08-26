@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles-3-1.css">
+  <title>OUR VIDEOS</title>
+</head>
+<body>
+  <header>
+    <h1>A Short Messages From Us</h1>
+    <p style="
+      font-size: 20px;
+      "><a href="/main-page.html">Home</a></p>
+  </header>
+  <main>
+    <section class="content-section">
+      <h2>Siva Kumar Kota A.K.A Nanna</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="/videos/Dad.mp4" frameborder="0" allowfullscreen muted></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+            font-size: 20px;
+            width: 600px;
+            line-height: 25x;
+            ">Pranav, as you embark on your journey to America for higher studies, remember that education is the key to unlocking the potential. Stay dedicated, embrace professionalism, and excel in all you do. Make us proud, and may this experience shape you into a remarkable individual. 
+
+            Best wishes.
+            Siva kumar</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Kavitha Kota A.K.A Amma</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="/videos/Kavi.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+          font-size: 20px;
+          width: 600px;
+          line-height: 25x;
+          ">Dearest Maniam,    
+
+            The home is where the heart is. No matter where any of us is, we know where home is - with each other ALWAYS!!!!</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Kali Krishna Kota A.K.A Pedda Akka</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/kali.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+          font-size: 20px;
+          width: 600px;
+          line-height: 25x;
+          ">Deep breaths, peace, calm and manifestation😂😂😂</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Sriya Kota A.K.A Chinna Akka</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/sriya.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+            font-size: 20px;
+            width: 600px;
+            line-height: 25x;
+            ">Success is the journey you're already on. Embrace every challenge, for they're the stepping stones to your goals. With your determination, there's no doubt you'll reach incredible heights. Here's to your journey and the success that's destined to follow!</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Devahoothi Kota A.K.A Your Favorite Sibling</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/Hoothi.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+          font-size: 20px;
+          width: 600px;
+          line-height: 25x;
+          ">Heyy annaya I'm supposed to say something nice about you but I can't think of anything jk. You're one of the coolest people i know and you've got one of the weirdest and the best personality.  Please have shi ton of fun and you don't have to tell me because I know you'll miss me the most.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>Prasanna Kota A.K.A He Who's Taller Than You</h2>
+      <div class="content-wrapper">
+        <div class="content-video">
+          <iframe width="560" height="315" src="videos/Prasanna.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="content-text">
+          <p style="
+          font-size: 20px;
+          width: 600px;
+          line-height: 25x;
+          ">You've embarked on an incredible journey and i am very pround of i hope you can enjoy your stay. I know you will succed at anything you put your mind to so do your best and enjoy yourself.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Add more content sections here -->
+  <footer>
+    <p>&copy; 2023 KOTAS. All rights reserved.</p>
+  </footer>
+  <script>
+    // Pause videos after they are loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('iframe');
+      videos.forEach(video => {
+        video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      });
+    });
+  </script>
+</body>
+</html>

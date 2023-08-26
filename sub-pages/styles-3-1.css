@@ -1,0 +1,74 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b0000; /* Dark maroon background color */
+  color: #f0f0f0; /* Lighter text color */
+}
+
+header {
+  background-color: #330000; /* Slightly darker maroon header background */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #faf3f6;
+}
+
+.content-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #4c0000; /* Darker maroon background for content sections */
+}
+
+.content-section h2 {
+  font-size: 24px;
+  color: #efe8eb;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-video {
+  width: 60%;
+  max-width: 560px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin-bottom: 20px;
+}
+
+.content-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content-text {
+  width: 80%;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.content-text p {
+  font-size: 16px;
+  color: #f0f0f0; /* Lighter text color */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #330000; /* Match the header background color */
+  color: #f0f0f0; /* Lighter text color */
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
